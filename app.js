@@ -12,7 +12,9 @@ const contactrouter = require("./routes/contact.routes");
 const projrouter = require("./routes/project.routes");
 const DataSubmitHandler = async () => {
   await mongoose
-    .connect("mongodb://127.0.0.1:27017/portfolio")
+    .connect(
+      "mongodb+srv://rohithmnprince4:7s6cQ5WXNyjBSIXi@cluster0.1kv5hth.mongodb.net/portfolio?retryWrites=true&w=majority"
+    )
     .then((connection) => {
       console.log("Mongodb connected successfully");
     })
